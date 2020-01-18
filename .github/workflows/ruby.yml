@@ -15,7 +15,7 @@ jobs:
         ruby-version: 2.6.x
     - name: Build and test with RSpec
       run: |
-        gem install bundler
-        bundle install --jobs 4 --retry 3
         cd linked_lists/
+        gem install bundler
+        bundle install --jobs 4 --retry 1
         rspec spec
